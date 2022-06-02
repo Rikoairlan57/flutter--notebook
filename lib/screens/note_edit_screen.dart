@@ -79,13 +79,6 @@ class _NoteEditScreenState extends State<NoteEditScreen> {
         ),
         actions: [
           IconButton(
-            icon: Icon(Icons.photo_camera),
-            color: black,
-            onPressed: () {
-              getImage(ImageSource.camera);
-            },
-          ),
-          IconButton(
             icon: Icon(Icons.insert_photo),
             color: black,
             onPressed: () {

@@ -1,4 +1,4 @@
-import 'package:flutter/gestures.dart';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_notes/helper/note_provider.dart';
 import 'package:flutter_notes/screens/note_edit_screen.dart';
@@ -67,11 +67,8 @@ class NoteListScreen extends StatelessWidget {
       child: Container(
         decoration: BoxDecoration(
           color: headerColor,
-          borderRadius: BorderRadius.only(
-            bottomRight: Radius.circular(75.0),
-          ),
         ),
-        height: 150.0,
+        height: 100.0,
         width: double.infinity,
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -98,28 +95,7 @@ class NoteListScreen extends StatelessWidget {
         header(),
         Column(
           children: [
-            Padding(
-              padding: const EdgeInsets.only(top: 50.0),
-              child: Image.asset(
-                'crying_emoji.png',
-                fit: BoxFit.cover,
-                width: 200.0,
-                height: 200.0,
-              ),
-            ),
-            RichText(
-              text: TextSpan(style: noNotesStyle, children: [
-                TextSpan(text: ' There is no note available\n Tap on "'),
-                TextSpan(
-                    text: '+',
-                    style: boldPlus,
-                    recognizer: TapGestureRecognizer()
-                      ..onTap = () {
-                        goToNoteEditScreen(context);
-                      }),
-                TextSpan(text: '" to add new note')
-              ]),
-            ),
+
           ],
         ),
       ],

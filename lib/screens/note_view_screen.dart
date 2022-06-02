@@ -21,6 +21,7 @@ class _NoteViewScreenState extends State<NoteViewScreen> {
 
   @override
   void didChangeDependencies() {
+    // ignore: todo
     // TODO: implement didChangeDependencies
     super.didChangeDependencies();
 
